@@ -5,5 +5,6 @@ def is_palindrome(string):
 
     return True
 
-print is_palindrome("kajak") == True
-print is_palindrome("kajaks") == False
+if __name__ == '__main__':
+	print is_palindrome("kajak") == True
+	print is_palindrome("kajaks") == False

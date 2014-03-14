@@ -13,4 +13,5 @@ def is_palindrome_ext(string):
 
     return is_palindrome(string.lower())
 
-print is_palindrome_ext('Was it a rat I saw?') == True
+if __name__ == '__main__':
+	print is_palindrome_ext('Was it a rat I saw?') == True
