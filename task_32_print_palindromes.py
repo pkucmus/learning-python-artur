@@ -10,4 +10,6 @@ def print_palindromes(filename):
 
 	file.close()
 
-print_palindromes("palindromy.in")
+if __name__ == '__main__':
+    filename = raw_input('Which file you would like to check?\n')
+    print_palindromes(filename)

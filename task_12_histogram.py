@@ -2,4 +2,5 @@ def histogram(numbers):
     for i in numbers:
         print i*'*'
 
-histogram([4, 9, 7])
+if __name__ == '__main__':
+	histogram([4, 9, 7])
