@@ -1,13 +1,13 @@
 from task_8_is_palindrome import is_palindrome
 
-def is_palindrome_ext(string):
-    punctuations =  [
-        '!', '#', '"', '%', '$', "'", '&', ')', '(', '+',
-        '*', '-', ',', '/', '.', ';', ':', '=', '<', '?',
-        '>', '@', '[', ']', '\\', '_', '^', '`', '{', '}',
-        '|', '~', ' '
-        ]
+punctuations =  [
+    '!', '#', '"', '%', '$', "'", '&', ')', '(', '+',
+    '*', '-', ',', '/', '.', ';', ':', '=', '<', '?',
+    '>', '@', '[', ']', '\\', '_', '^', '`', '{', '}',
+    '|', '~', ' '
+    ]
 
+def is_palindrome_ext(string):
     for punc in punctuations:
         string = string.replace(punc, '')
 

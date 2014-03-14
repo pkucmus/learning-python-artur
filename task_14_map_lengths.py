@@ -1,4 +1,4 @@
 def map_lengths(strings):
-    return [len(i) for i in strings]
+    return {i:len(i) for i in strings}
 
-print map_lengths(['ala','ma','kota']) == [3, 2, 4]
+print map_lengths(['ala','ma','kota']) == {'ala':3, 'ma':2, 'kota':4}

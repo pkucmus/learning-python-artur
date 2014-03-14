@@ -1,9 +1,4 @@
 def reverse(string):
-    result = ''
-
-    for i in range(1, len(string) + 1):
-        result += string[-i]
-
-    return result
+    return string[::-1]
 
 print reverse("I am testing") == "gnitset ma I"

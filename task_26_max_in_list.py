@@ -1,3 +1,5 @@
+from task_1_max import max
+
 def max_in_list(numbers):
     return reduce(lambda x, y: max(x, y), numbers)
 

@@ -1,5 +1,4 @@
 def is_member(x, a):
-    #return x in a
     for number in a:
         if x == number:
             return True

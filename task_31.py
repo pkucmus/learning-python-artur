@@ -1,24 +1,15 @@
 def map(func, list):
-	result = []
-	for i in list:
-		result.append(func(i))
-
-	return result
+    return [func(i) for i in list]
 
 def filter(func, list):
-	result = []
-	for i in list:
-		if func(i):
-			result.append(i)
-
-	return result
+    return [i for i in list if func(i)]
 
 def reduce(func, list):
-	result = list
-	for i in range(len(list)-1):
-		result[i+1] = func(result[i], list[i+1])
+    result = list[0]
+    for i, value in enumerate(list[:-1]):
+        result = func(result, value)
 
-	return result[len(list)-2]
+    return result
 
 print map(lambda word: len(word), ['aaa', 'b', 'ccccc', 'dd', 'eee']) == [3, 1, 5, 2, 3]
 print filter(lambda word: len(word) > 4, ['aaa', 'b', 'ccccc', 'dd', 'eee']) == ['ccccc']

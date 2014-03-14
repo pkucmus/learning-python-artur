@@ -1,9 +1,6 @@
+from task_1_max import max
+
 def max_of_three(x, y, z):
-    if x > y and x > z:
-        return x
-    if y > x and y > z:
-        return y
-    if z > y and z > x:
-        return z
+	return max(max(x, y), z)
 
 print 9 == max_of_three(5, 3, 9)

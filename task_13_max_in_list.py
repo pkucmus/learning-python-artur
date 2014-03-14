@@ -1,3 +1,5 @@
+from task_1_max import max
+
 def max_in_list(list):
     result = 0
 
